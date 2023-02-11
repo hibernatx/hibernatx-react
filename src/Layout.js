@@ -10,7 +10,7 @@ function Layout(props) {
     return (
         <div className='main-display'>
             <p>Room is {room}</p>
-            <Dropdown handleRoom={() => setRoom}/>
+            <Dropdown handleRoom={setRoom}/>
             <Map room={room}/>
         </div>
     )
