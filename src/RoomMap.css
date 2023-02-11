@@ -1,0 +1,5 @@
+.roommap-grid {
+    display: grid;
+    padding: 40px;
+    grid-template-columns: 3; /* default value */
+}

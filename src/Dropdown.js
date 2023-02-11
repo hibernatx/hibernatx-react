@@ -1,13 +1,15 @@
 import './Dropdown.css'
 
 function Dropdown(props) {
+
+    const rooms = [ {key: "59-3229", val: "B59 / 3229"}, {key: "59-2203", val: "B59 / 2203"}, {key: "59-2213", val: "B59 / 2213"} ];
+    const setRoom = props.handleRoom;
+
     return (
         <div className="dropdown">
             <button className="dropbtn">Select room</button>
             <div className="dropdown-content">
-                <a href="59-3229">B59 / 3229</a>
-                <a href="59-2203">B59 / 2203</a>
-                <a href="59-2213">B59 / 2213</a>
+                {rooms.map((i) => <div onClick={() => setRoom(i.key)}>{i.val}</div>)}
             </div>
         </div>
     )
