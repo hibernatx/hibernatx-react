@@ -2,6 +2,7 @@ import './Layout.css';
 import { useState } from 'react';
 import Dropdown from './Dropdown';
 import Map from './Map';
+import Devices from "./Devices";
 
 function Layout(props) {
 
@@ -11,7 +12,8 @@ function Layout(props) {
         <div className='main-display'>
             <p>Room is {room}</p>
             <Dropdown handleRoom={setRoom}/>
-            <Map room={room}/>
+            {/*<Map room={room}/>*/}
+            <Devices room={room}/>
         </div>
     )
 }
