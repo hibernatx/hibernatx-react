@@ -1,7 +1,10 @@
+import './Layout.css';
+import Dropdown from './Dropdown';
+
 function Layout(props) {
     return (
-        <div className="main-grid">
-            
+        <div className='main-display'>
+            <Dropdown />
         </div>
     )
 }
