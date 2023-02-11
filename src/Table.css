@@ -1,0 +1,8 @@
+.table {
+    fill: #00FF00;
+    margin: 20px;
+    border-style: solid;
+    border-color: #0000FF;
+    border-width: 5px;
+    flex-grow: 1;
+}

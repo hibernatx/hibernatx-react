@@ -9,7 +9,7 @@ function Dropdown(props) {
         <div className="dropdown">
             <button className="dropbtn">Select room</button>
             <div className="dropdown-content">
-                {rooms.map((i) => <div onClick={() => setRoom(i.key)}>{i.val}</div>)}
+                {rooms.map((i) => <div key={i.key} onClick={() => setRoom(i.key)}>{i.val}</div>)}
             </div>
         </div>
     )
