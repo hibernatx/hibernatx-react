@@ -19,19 +19,19 @@ function Table(props) {
 
     return (
         <div className="table" style={{width: "auto", minHeight: "400px"}}>
-            {/*
-        <div className="table-container">
-            <div className="computers-flex">
-                {computerListLeft.map((e, i) => {
-                    <div key={i} className="computer" id={e}></div>
-            })}
+            <div className="table-container">
+                <div className="computers-flex">
+                    {computerListLeft.map((e, i) =>
+                        <div key={i} className="computer" id={e}></div>
+                )}
+                </div>
+                <div className="actual-table"></div>
+                <div className="computers-flex">
+                    {computerListRight.map((e, i) =>
+                        <div key={i} className="computer" id={e}></div>
+                )}
             </div>
-            <div className="actual-table"></div>
-            <div className="computers-flex">
-                {computerListRight.map((e, i) => {
-                    <div key={i} className="computer" id={e}></div>
-            })}
-            </div>
+        </div>
         </div>
     )
 }
