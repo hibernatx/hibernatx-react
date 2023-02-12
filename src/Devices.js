@@ -1,5 +1,6 @@
 import ActionButton from "./ActionButton";
-import './Devices.css'
+import DeviceStatus from "./style/DeviceStatus";
+import './style/Devices.css'
 
 function Devices(props) {
 
@@ -20,10 +21,6 @@ function Devices(props) {
     const nDevices = getNDevices(room);
     const devices = room === "None" ? [] : [...Array(nDevices)].map((e, i) => `${room}-${i}`);
 
-    const getStatus = (id) => {
-        return "Inactive" // change this
-    }
-
     return (
         <table className="devices-table">
             <tr>
@@ -34,8 +31,9 @@ function Devices(props) {
             {devices.map((e, i) =>
                 <tr key={i}>
                     <th>{e}</th>
-                    <th>{getStatus(e)}</th>
-                    <th><ActionButton props={e} /></th>
+                    {/*<th>{getStatus()}</th>*/}
+                    <th><DeviceStatus key={e} room={room} pcid={e} /></th>
+                    <th><ActionButton key={e} room={room} pcid={e} /></th>
                 </tr>
             )}
         </table>

@@ -1,4 +1,4 @@
-import './RoomMap.css';
+import './style/RoomMap.css';
 import Table from './Table';
 
 function RoomMap(props) {
