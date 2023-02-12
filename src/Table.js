@@ -6,7 +6,6 @@ function Table(props) {
 
     const generateComputerList = (start) => {
         let computerList = [];
-
         for (let i = start; i < tableLength + start; i++) {
             let id = tableId * (tableLength * 2) + i;
             computerList.push(`${room}-${id}`);
@@ -19,6 +18,8 @@ function Table(props) {
     const computerListRight = generateComputerList(tableLength);
 
     return (
+        <div className="table" style={{width: "auto", minHeight: "400px"}}>
+            {/*
         <div className="table-container">
             <div className="computers-flex">
                 {computerListLeft.map((e, i) => {
