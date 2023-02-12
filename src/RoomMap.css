@@ -1,10 +1,5 @@
-.roommap {
-    display: flex;
-    justify-content: center;
-    width: auto;
-    margin: 20px;
-    border-style: solid;
-    border-color: #FF0000;
-    border-width: 10px;
-    grid-template-columns: 30px; /* default value */
+.roommap-grid {
+    display: grid;
+    padding: 40px;
+    grid-template-columns: repeat(3, 1fr); /* default value */
 }
